@@ -1,0 +1,14 @@
+{
+  "name": "exploration2",
+  "version": "1.0.0",
+  "description": "Exploration 2 using node and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Darrough",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.5"
+  }
+}
