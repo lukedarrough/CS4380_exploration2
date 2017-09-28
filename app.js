@@ -66,6 +66,6 @@ app.get('/opinion', function(req, res) {
 	res.send(message);
 });
 
-app.listen(3000, function() {
+app.listen(80, function() {
 	console.log("App has been started");
 });
