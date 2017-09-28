@@ -31,9 +31,9 @@ function getLukeInfo() {
 
 function getLukeOpinion() {
   var num1 = $("#number1").val();
-  var num2 = $("#number2").val();
+  var num2 = $("#number2").val();;
 
-  if (num1 === "" || num2 === "" || isNaN(num1) || isNaN(num2)) {
+  if (num1 === "" || num2 === "" || isNaN(num1) || isNaN(num2) || !Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2)) ) {
     $("#lukeOpinion").html("Please enter two valid numbers");
     return;
   }
