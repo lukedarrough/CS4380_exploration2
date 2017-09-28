@@ -20,5 +20,25 @@ $(document).ready(function(){
       });
     } // End if
   });
-  
+
 })
+
+function getLukeInfo() {
+  $.get("/info", function(data, status){
+    $("#infoAboutLukeParagraph").html(data);
+  });
+}
+
+function getLukeOpinion() {
+  var num1 = $("#number1").val();
+  var num2 = $("#number2").val();
+
+  if (num1 === "" || num2 === "" || isNaN(num1) || isNaN(num2)) {
+    $("#lukeOpinion").html("Please enter two valid numbers");
+    return;
+  }
+
+  $.get("/opinion",{number1:num1, number2:num2}, function(data, status){
+    $("#lukeOpinion").html("<strong>VERDICT:</strong> " + data);
+  });
+}

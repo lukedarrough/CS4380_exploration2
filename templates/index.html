@@ -28,9 +28,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#values">VALUES</a></li>
-        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#about">INFO</a></li>
+        <li><a href="#values">EXPERIENCE</a></li>
+        <li><a href="#services">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -45,24 +45,27 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+      <h2>Information about Luke Darrough</h2><br>
+      <h4>Click the button below to get some information about Luke Darrough!</h4><br>
+      <button class="btn btn-default btn-lg" onclick="getLukeInfo()">Get Information</button>
+      <br><br><br>
+      <p id="infoAboutLukeParagraph"></p>
+      <br>
     </div>
   </div>
 </div>
 
 <div id="values" class="container-fluid bg-grey">
   <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="col-sm-12">
+      <h2>Luke's Opinion</h2><br>
+      <h4><strong>Purpose:</strong> Find out what Luke thinks about you based purely upon your favorite numbers. Just enter two of your favorite numbers, and if they fit Luke's meaningless standards, they are great! (hint: he HATES prime numbers)</h4>
+      <input type="text" id="number1" maxlength="8">
+      <input type="text" id="number2" maxlength="8">
+      <br><br>
+      <button class="btn btn-default btn-lg" onclick="getLukeOpinion()">Get Opinion</button>
+      <br><br><br>
+      <p id="lukeOpinion"></p>
     </div>
   </div>
 </div>
@@ -71,42 +74,7 @@
 <div id="services" class="container-fluid text-center">
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
+  <br><br><br><br><br><br><br>
 </div>
 
 <!--
